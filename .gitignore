@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Experiment outputs (keep the repo clean; results are reproducible)
+experiments/results/
+experiments/*.json
+experiments/*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
