@@ -2,7 +2,7 @@
 
 > **Chain-of-Thought Engineering** — a branch of prompt engineering that treats the reasoning chain as a designable object, not a black box.
 
-**CoT Engineering** 是提示词工程的一个分支：DeepSeek V4 的思考过程是可约束、可设计的。我们给模型一套**受控的思考架构**——用多说话人标记把思考组织成可解析的结构，并让思考**直接决定输出**。
+**CoT Engineering** 是提示词工程的一个分支：DeepSeek V4 的思考过程可约束、可设计。我们给模型一套**受控的思考架构**——用多说话人标记把思考组织成可解析的结构，让思考**直接决定输出**。
 
 ---
 
@@ -13,7 +13,7 @@
 
 ## 为什么可行
 
-DeepSeek V4（V4-Pro / V4-Flash）在 Thinking 模式下，通过 `<think>` 思考标签把推理过程与最终回答区分开。思考是自回归生成的文本，前面写下的思考会引导后面的思考——因此思考过程可以被提示词**框定和塑形**。
+DeepSeek V4（V4-Pro / V4-Flash）在 Thinking 模式下，用 `<think>` 标签隔开推理过程与最终回答。思考是自回归生成的文本，前面写出的内容会引导后续思考，所以能被提示词**框定和塑形**。
 
 ## 核心发现（实验验证）
 
